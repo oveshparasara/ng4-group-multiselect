@@ -1,0 +1,28 @@
+{
+  "name": "ng4-group-multiselect",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oveshparasara/ng4-group-multiselect.git"
+  },
+  "author": {
+    "name": "ovesh.parasara",
+    "email": "ovesh.parasara@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oveshparasara/ng4-group-multiselect.git/issues"
+  },
+  "main": "ng4-group-multiselect.umd.js",
+  "module": "ng4-group-multiselect.js",
+  "jsnext:main": "ng4-group-multiselect.js",
+  "typings": "ng4-group-multiselect.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
