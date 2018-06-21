@@ -45,11 +45,12 @@ export class AppModule { }
 
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
-```xml
+xml
 <!-- You can now use your library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
+```
 <group-multi-select [data]="demo2" [displayKey]="'name'" [groupBy]="'type'" [(ngModel)]="selectedItems" ></group-multi-select>
 
 this.demo2 = [{ id: 1, name: "item 1", type: "group1" }, 
@@ -57,12 +58,12 @@ this.demo2 = [{ id: 1, name: "item 1", type: "group1" },
             { id: 3, name: "item 3", type: "group2" }, 
             { id: 4, name: "item 4", type: "group3" }
         ];
-
+```
 # Display Name - Required
 This is the property of your objects that you want to use to display in the selected values list, as well as in the list of available options. The value can be whatever you want, as long as it's a key value in your objects - this should be a string.
 
 In your template:
-
+```
 <group-multi-select [data]="demo2" [displayKey]="'itemName"...></group-multi-select>
 In your class:
 
@@ -71,15 +72,15 @@ this.demo2 = [{id: 1, itemName: 'item 1'},
     {id: 3, itemName: 'item 3'}, 
     {id: 4, itemName: 'item 4'}
 ];
-
-Group By - optional
+```
+# Group By - optional
 Default - none
 This is the property that you'd like to group your items by.
 
 Example
 
 In your template:
-
+```
 <group-multi-select [data]="demo2" [displayKey]="'name" [groupBy]="'type'"...></group-multi-select>
 In your class:
 
@@ -88,10 +89,8 @@ this.demo2 = [{ id: 1, name: "item 1", type: "type1" },
     { id: 3, name: "item 3", type: "type1" }, 
     { id: 4, name: "item 4", type: "type2" }
 ];
-
-
-
 ```
+
 
 ## Development
 
