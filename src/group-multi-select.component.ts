@@ -550,12 +550,12 @@ export class GroupMultiSelectComponent implements OnInit, ControlValueAccessor, 
 
   ngOnInit() {
     //this.groupBy ='type';
-    this.displayKey = 'name'
-    this.data = [{ id: 1, name: "item 1", type: "group1" },
+   // this.displayKey = 'name'
+    /*this.data = [{ id: 1, name: "item 1", type: "group1" },
       { id: 2, name: "item 2", type: "group1" },
       { id: 3, name: "item 3", type: "group1" },
       { id: 4, name: "item 4", type: "group2" }
-    ];
+    ];*/
     this.createGroups();
     if (this.allSelected) {
       this.selectAll();
