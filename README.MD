@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ng4-group-multiselect';
+import { Ng4GroupMultiSelect } from 'ng4-group-multiselect';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<group-multi-select></group-multi-select>
 ```
 
 ## Development

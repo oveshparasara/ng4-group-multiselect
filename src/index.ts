@@ -1,15 +1,15 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SampleComponent } from './sample.component';
-import { SampleService } from './sample.service';
-import {FilterPipe} from "./sample.pipe";
+import { GroupMultiSelectComponent } from './group-multi-select.component';
+import { GroupMultiSelectService } from './group-multi-select.service';
+import {FilterPipe} from "./group-multi-select.pipe";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ClickOutsideDirective, ScrollDirective, setPosition, styleDirective} from "./sample.directive";
+import {ClickOutsideDirective, ScrollDirective, setPosition, styleDirective} from "./group-multi-select.directive";
 
-export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
+export * from './group-multi-select.component';
+export * from './group-multi-select.directive';
+export * from './group-multi-select.pipe';
+export * from './group-multi-select.service';
 
 @NgModule({
   imports: [
@@ -18,7 +18,7 @@ export * from './sample.service';
     ReactiveFormsModule
   ],
   declarations: [
-    SampleComponent,
+    GroupMultiSelectComponent,
     FilterPipe,
     ClickOutsideDirective,
     ScrollDirective,
@@ -26,7 +26,7 @@ export * from './sample.service';
     styleDirective
   ],
   exports: [
-    SampleComponent,
+    GroupMultiSelectComponent,
     FilterPipe,
     ClickOutsideDirective,
     ScrollDirective,
@@ -34,11 +34,11 @@ export * from './sample.service';
     styleDirective
   ]
 })
-export class SampleModule {
+export class Ng4GroupMultiSelect {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
-      providers: [SampleService]
+      ngModule: Ng4GroupMultiSelect,
+      providers: [GroupMultiSelectService]
     };
   }
 }

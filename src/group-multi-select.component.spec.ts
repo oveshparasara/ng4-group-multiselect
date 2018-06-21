@@ -2,21 +2,21 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }              from '@angular/platform-browser';
 import { DebugElement }    from '@angular/core';
 
-import { SampleComponent } from './sample.component';
+import { GroupMultiSelectComponent } from './group-multi-select.component';
 
-describe('SampleComponent', () => {
+describe('GroupMultiSelectComponent', () => {
 
-  let comp:    SampleComponent;
-  let fixture: ComponentFixture<SampleComponent>;
+  let comp:    GroupMultiSelectComponent;
+  let fixture: ComponentFixture<GroupMultiSelectComponent>;
   let de:      DebugElement;
   let el:      HTMLElement;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ SampleComponent ], // declare the test component
+      declarations: [ GroupMultiSelectComponent ], // declare the test component
     });
 
-    fixture = TestBed.createComponent(SampleComponent);
+    fixture = TestBed.createComponent(GroupMultiSelectComponent);
 
     comp = fixture.componentInstance; // BannerComponent test instance
 
