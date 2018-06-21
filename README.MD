@@ -58,7 +58,7 @@ this.demo2 = [{ id: 1, name: "item 1", type: "group1" },
             { id: 4, name: "item 4", type: "group3" }
         ];
 
-Display Name - Required
+# Display Name - Required
 This is the property of your objects that you want to use to display in the selected values list, as well as in the list of available options. The value can be whatever you want, as long as it's a key value in your objects - this should be a string.
 
 In your template:
